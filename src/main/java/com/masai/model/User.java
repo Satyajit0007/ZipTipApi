@@ -47,11 +47,7 @@ public class User {
 	@Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{6,12}$", message = "Password should be alphanumeric and must contain 6-12 characters having at least one special character, one upper case, one lowercase, and one digit")
 	private String password;
 	
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 036be42aafda5cda29586e29ffeb1340041a23af
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "userAddress")
 	private List<Address> address = new ArrayList<>();
 	
