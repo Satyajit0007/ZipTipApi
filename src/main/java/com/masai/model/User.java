@@ -33,7 +33,7 @@ public class User {
 	private Integer userId;
 	
 	@NotBlank
-	@Pattern(regexp = "^[a-zA-Z]*$" , message = "First name must not contain numbers or special characters")
+	@Pattern(regexp = "^[a-zA-Z ]{3,20}$" , message = "First name must not contain numbers or special characters")
 	private String name;
 	
 	@NotBlank
